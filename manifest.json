@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Sunflower Buddy",
+  "version": "1.0",
+  "description": "Adds a cute, draggable sunflower to the corner of your screen.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["sunflower.gif"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "permissions": []
+}
